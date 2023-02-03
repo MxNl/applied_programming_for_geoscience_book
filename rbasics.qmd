@@ -1,1 +1,57 @@
 # R Basics
+
+## Overview and Terms
+
+sada
+
+-   R
+-   RStudio
+-   git
+-   github
+-   quarto
+-   Packages
+-   Function
+-   Vignette
+
+## Data types
+
+text.
+
+## Further Resources
+
+### Programming with R
+
+-   Learning fundamental programming in R for data science with the `tidyverse` meta-package:<br>[R for Data Science \| by Hadley Wickham and Garret Grolemund](https://r4ds.had.co.nz/index.html)
+-   Introduction into R:<br>[R in Action \| by Robert I. Kabacoff](https://livebook.manning.com/book/r-in-action-third-edition/r-in-action/4) (only partially available for free)
+-   In-depth best practices for efficient R programming:<br>[Efficient R programming \| by Colin Gillespie and Robin Lovelace](https://csgillespie.github.io/efficientR/)
+-   Wrangling, analyzing, and vizualising geo data:<br>[Geocomputation with R \| by Robin Lovelace, Jakub Nowosad and Jannes Muenchow](https://geocompr.robinlovelace.net/index.html)
+-   Handling spatial data in R:<br>[Spatial Data Science \| by Edzer Pebesma and Roger Bivand](https://r-spatial.org/book/)
+-   All you need to know about R with git and github:<br>[Happy Git and GitHub for the useR \| by Jenny Bryan](https://happygitwithr.com/index.html)
+-   Basics of machine learning in R using the `tidymodels` meta-package:<br>[Tidy Modeling with R \| by Max Kuhn and Julia Silge](https://www.tmwr.org/)
+-   Introduction and in-depth knowledge for writing R packages:<br>[R Packages \| by Hadley Wickham and Jenny Bryan](https://r-pkgs.org/)
+
+### Learning R --- through Challenges and small Projects
+
+For speeding up the learning process it is more important to practise rather than reading books. There are many great places in the internet where you can find smaller and bigger data science challenges and projects. I really recommend to visit those places and just learn by directly solving tasks. Most important ones are:
+
+-   Kaggle
+
+-   TidyTuesday
+
+-   AdventOfCode
+
+-   [30DayMapChallenge](https://30daymapchallenge.com/)
+
+### Community
+
+The R community is very friendly and supportive community. Most important packages have great documentations for learning new R packages and frameworks. The R community has an extraordinary sense of sharing knowledge and experiences. Important platforms for getting engaged with the R community but also for getting help with questions, issues and bugs are
+
+-   [Stackoverflow](https://stackoverflow.com/questions/tagged/r) for getting help with questions
+
+-   [Posit community forum (formerly Rstudio)](https://community.rstudio.com/) for getting help with questions
+
+-   [Twitter with #rstats](https://twitter.com/search?q=%23rstats&src=typed_query) for keeping track of latest developments, tips, tricks and getting in touch with the active R community members
+
+-   [Mastodon](https://mastodon.social/) with #rstats, same same
+
+-   [Github](https://github.com/) for getting help with bugs, getting to know the developers behind packages or simply hosting and versioning your own code

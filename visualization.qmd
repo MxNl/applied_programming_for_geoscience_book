@@ -1,0 +1,7 @@
+# Visualizations
+
+This is a very helpful tool for finding out the best suited chart type for a data visualization of a given data structure:
+
+```{r, echo=FALSE, out.width="100%", fig.cap="Link to Website: [https://www.data-to-viz.com/](https://www.data-to-viz.com/)"}
+knitr::include_url("https://www.data-to-viz.com/")
+```

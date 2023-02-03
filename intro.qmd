@@ -1,8 +1,5 @@
-# Introduction
-
-## Content
-
-This online book contains the material for the R teaching course "Applied R Programming for Geoscience --- From Data Cleaning to Publishing". The content of this course focusses on showing the capabilities of programming languages (in this cas R) for every task throughout most common in research project workflows: starting with data cleaning, data wrangling, analysis, high quality visualisations to writing manuscripts for peer-reviewed journal publishing --- all done in one single free open-source environment. Due to the contrained time, this course will not go into details of each of these steps. It will rather show that all this can be done in R. It will also inform about the benefits of switching from "point-and-click", graphical user interface based software to a programming language and provide tipps, tricks and information on self-teaching.
+# Introduction {{< li dxoycpzg >}}
+{{< li lupuorrc trigger=loop delay=5000 speed=1.0 colors=secondary:#619ab3 >}}
 
 ## Motivation
 
@@ -10,4 +7,12 @@ During my last few years as early career scientist in hydrogeology, I noticed so
 
 ## Readership (who is this for?)
 
-This course or book is meant for anybody interested in learning essential tools for data science and reproducibility in science. There is no prior knowledge of programming or R required, although in could be helpful.
+This course or book is meant for anybody
+
+-   interested in learning essential **tools for data science**
+-   interested in state-of-the-art methods for **reproducibility in science**
+-   **with or without** prior knowledge of programming in general or R (although it wouldn't hurt of course)
+
+## About Me
+
+I am working as a researcher in the field of machine learning and hydrogeology at the Federal Institute for Geoscience and Natural Resources (BGR). My projects include modelling groundwater quality parameters for producing maps as well as modelling groundwater level time series for making predictions. For this purpose I startet learning R mainly and a little bit Python a few years ago. Besides this, I enjoy using R for making data visualizations and teaching R and its capabilities to others.

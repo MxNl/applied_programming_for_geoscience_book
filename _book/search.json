@@ -38,15 +38,15 @@
     "objectID": "intro.html#motivation",
     "href": "intro.html#motivation",
     "title": "1  Introduction",
-    "section": "1.2 Motivation",
-    "text": "1.2 Motivation\nDuring my last few years as early career scientist in hydrogeology, I noticed something, that has been studied and written about a lot already: Reproducibility! Reproducibility in science! And there are even concepts and tools for adressing this issue and to ensure a high level of reproducibility in science since the early days of computers and programming."
+    "section": "1.1 Motivation",
+    "text": "1.1 Motivation\nDuring my last few years as early career scientist in hydrogeology, I noticed something, that has been studied and written about a lot already: Reproducibility! Reproducibility in science! And there are even concepts and tools for adressing this issue and to ensure a high level of reproducibility in science since the early days of computers and programming."
   },
   {
     "objectID": "intro.html#readership-who-is-this-for",
     "href": "intro.html#readership-who-is-this-for",
     "title": "1  Introduction",
-    "section": "1.3 Readership (who is this for?)",
-    "text": "1.3 Readership (who is this for?)\nThis course or book is meant for anybody interested in learning essential tools for data science and reproducibility in science. There is no prior knowledge of programming or R required, although in could be helpful."
+    "section": "1.2 Readership (who is this for?)",
+    "text": "1.2 Readership (who is this for?)\nThis course or book is meant for anybody\n\ninterested in learning essential tools for data science\ninterested in state-of-the-art methods for reproducibility in science\nwith or without prior knowledge of programming in general or R (although it wouldn’t hurt of course)"
   },
   {
     "objectID": "intro.html#acknowledgements",
@@ -60,7 +60,7 @@
     "href": "index.html#content",
     "title": "Applied Programming for Geosciences",
     "section": "Content",
-    "text": "Content\nThis online book contains the material for the R teaching course “Applied R Programming for Geoscience — From Data Cleaning to Publishing”. The content of this course focusses on showing the capabilities of programming languages (in this cas R) for every task throughout most common in research project workflows: starting with data cleaning, data wrangling, analysis, high quality visualisations to writing manuscripts for peer-reviewed journal publishing — all done in one single free open-source environment. Due to the contrained time, this course will not go into details of each of these steps. It will rather show that all this can be done in R. It will also inform about the benefits of switching from “point-and-click”, graphical user interface based software to a programming language and provide tipps, tricks and information on self-teaching."
+    "text": "Content\nWelcome to Applied R Programming for Geoscience — From Data Cleaning to Publishing! This online book contains the material for the corresponding R teaching course. The content of this course focusses on showing the capabilities of programming languages (in this cas R) for every task throughout most common in research project workflows: starting with\n\ndata import, cleaning and wrangling,\nanalysis,\nhigh quality visualizations to\nwriting manuscripts for peer-reviewed journal publishing.\n\nall done in one single free open-source environment. Due to the contrained time, this course is not meant to be a comprehensive programming with R introductory course and therefore, will not go into details of each of the mentioned steps. It will rather show that all this can be done in R. I hope that seeing the advantages of it will encourage all participants to further keep learning programming and applying all the useful tools that come with it. As compensation, this book provides hints to online resources that help to get a foot into the door of improving R programming skills."
   },
   {
     "objectID": "index.html#motivation",
@@ -86,29 +86,106 @@
   {
     "objectID": "data.html#import",
     "href": "data.html#import",
-    "title": "2  The Data",
-    "section": "2.1 Import",
-    "text": "2.1 Import"
+    "title": "3  The Data",
+    "section": "3.1 Import",
+    "text": "3.1 Import"
   },
   {
     "objectID": "data.html#cleaning",
     "href": "data.html#cleaning",
-    "title": "2  The Data",
-    "section": "2.2 Cleaning",
-    "text": "2.2 Cleaning"
+    "title": "3  The Data",
+    "section": "3.2 Cleaning",
+    "text": "3.2 Cleaning"
   },
   {
     "objectID": "data.html#imputation",
     "href": "data.html#imputation",
-    "title": "2  The Data",
-    "section": "2.3 Imputation",
-    "text": "2.3 Imputation"
+    "title": "3  The Data",
+    "section": "3.3 Imputation",
+    "text": "3.3 Imputation"
   },
   {
     "objectID": "data.html#wrangling",
     "href": "data.html#wrangling",
-    "title": "2  The Data",
-    "section": "2.4 Wrangling",
-    "text": "2.4 Wrangling"
+    "title": "3  The Data",
+    "section": "3.4 Wrangling",
+    "text": "3.4 Wrangling"
+  },
+  {
+    "objectID": "intro.html#about-me",
+    "href": "intro.html#about-me",
+    "title": "1  Introduction",
+    "section": "1.3 About Me",
+    "text": "1.3 About Me\nI am working as a researcher in the field of machine learning and hydrogeology at the Federal Institute for Geoscience and Natural Resources (BGR). My projects include modelling groundwater quality parameters for producing maps as well as modelling groundwater level time series for making predictions. For this purpose I startet learning R mainly and a little bit Python a few years ago. Besides this, I enjoy using R for making data visualizations and teaching R and its capabilities to others."
+  },
+  {
+    "objectID": "rbasics.html#overview-and-terms",
+    "href": "rbasics.html#overview-and-terms",
+    "title": "2  R Basics",
+    "section": "2.1 Overview and Terms",
+    "text": "2.1 Overview and Terms\nsada\n\nR\nRStudio\ngit\ngithub\nquarto\nPackages\nFunction\nVignette"
+  },
+  {
+    "objectID": "rbasics.html#data-types",
+    "href": "rbasics.html#data-types",
+    "title": "2  R Basics",
+    "section": "2.2 Data types",
+    "text": "2.2 Data types\ntext."
+  },
+  {
+    "objectID": "rbasics.html#further-resources",
+    "href": "rbasics.html#further-resources",
+    "title": "2  R Basics",
+    "section": "2.3 Further Resources",
+    "text": "2.3 Further Resources\n\n2.3.1 Programming with R\n\nLearning fundamental programming in R for data science with the tidyverse meta-package:R for Data Science | by Hadley Wickham and Garret Grolemund\nIntroduction into R:R in Action | by Robert I. Kabacoff (only partially available for free)\nIn-depth best practices for efficient R programming:Efficient R programming | by Colin Gillespie and Robin Lovelace\nWrangling, analyzing, and vizualising geo data:Geocomputation with R | by Robin Lovelace, Jakub Nowosad and Jannes Muenchow\nHandling spatial data in R:Spatial Data Science | by Edzer Pebesma and Roger Bivand\nAll you need to know about R with git and github:Happy Git and GitHub for the useR | by Jenny Bryan\nBasics of machine learning in R using the tidymodels meta-package:Tidy Modeling with R | by Max Kuhn and Julia Silge\nIntroduction and in-depth knowledge for writing R packages:R Packages | by Hadley Wickham and Jenny Bryan\n\n\n\n2.3.2 Learning R — through Challenges and small Projects\nFor speeding up the learning process it is more important to practise rather than reading books. There are many great places in the internet where you can find smaller and bigger data science challenges and projects. I really recommend to visit those places and just learn by directly solving tasks. Most important ones are:\n\nKaggle\nTidyTuesday\nAdventOfCode\n30DayMapChallenge\n\n\n\n2.3.3 Community\nThe R community is very friendly and supportive community. Most important packages have great documentations for learning new R packages and frameworks. The R community has an extraordinary sense of sharing knowledge and experiences. Important platforms for getting engaged with the R community but also for getting help with questions, issues and bugs are\n\nStackoverflow for getting help with questions\nPosit community forum (formerly Rstudio) for getting help with questions\nTwitter with #rstats for keeping track of latest developments, tips, tricks and getting in touch with the active R community members\nMastodon with #rstats, same same\nGithub for getting help with bugs, getting to know the developers behind packages or simply hosting and versioning your own code"
+  },
+  {
+    "objectID": "analysis.html#missing-data",
+    "href": "analysis.html#missing-data",
+    "title": "4  Exploratory Data Analysis",
+    "section": "4.1 Missing Data",
+    "text": "4.1 Missing Data"
+  },
+  {
+    "objectID": "analysis.html#distributions-and-correlations",
+    "href": "analysis.html#distributions-and-correlations",
+    "title": "4  Exploratory Data Analysis",
+    "section": "4.2 Distributions and Correlations",
+    "text": "4.2 Distributions and Correlations"
+  },
+  {
+    "objectID": "visualization.html",
+    "href": "visualization.html",
+    "title": "5  Visualizations",
+    "section": "",
+    "text": "This is a very helpful tool for finding out the best suited chart type for a data visualization of a given data structure:"
+  },
+  {
+    "objectID": "manuscriptwriting.html#import",
+    "href": "manuscriptwriting.html#import",
+    "title": "6  The Data",
+    "section": "6.1 Import",
+    "text": "6.1 Import"
+  },
+  {
+    "objectID": "manuscriptwriting.html#cleaning",
+    "href": "manuscriptwriting.html#cleaning",
+    "title": "6  The Data",
+    "section": "6.2 Cleaning",
+    "text": "6.2 Cleaning"
+  },
+  {
+    "objectID": "manuscriptwriting.html#imputation",
+    "href": "manuscriptwriting.html#imputation",
+    "title": "6  The Data",
+    "section": "6.3 Imputation",
+    "text": "6.3 Imputation"
+  },
+  {
+    "objectID": "manuscriptwriting.html#wrangling",
+    "href": "manuscriptwriting.html#wrangling",
+    "title": "6  The Data",
+    "section": "6.4 Wrangling",
+    "text": "6.4 Wrangling"
   }
 ]

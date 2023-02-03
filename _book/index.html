@@ -38,10 +38,13 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-contrib/lord-icon-bundle-3.4.2/bundle.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -61,8 +64,10 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
 
 
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body class="nav-sidebar floating">
@@ -85,6 +90,25 @@ ul.task-list li input[type="checkbox"] {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Applied Programming for Geosciences</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/MxNl/applied_programming_for_geoscience_book" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="" title="Download" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-download"></i></a>
+    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="./Applied-Programming-for-Geosciences.pdf">
+            <i class="bi bi-bi-file-pdf pe-1"></i>
+          Download PDF
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="./Applied-Programming-for-Geosciences.epub">
+            <i class="bi bi-bi-journal pe-1"></i>
+          Download ePub
+          </a>
+        </li>
+    </ul>
+  <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
     </div>
       </div>
       <div class="mt-2 flex-shrink-0 align-items-center">
@@ -116,6 +140,21 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Exploratory Data Analysis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./visualization.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Visualizations</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./manuscriptwriting.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
   </div>
 </li>
@@ -131,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#content" id="toc-content" class="nav-link active" data-scroll-target="#content">Content</a></li>
   <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/MxNl/applied_programming_for_geoscience_book/edit/main/index.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -166,9 +205,18 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p><a href="https://github.com/MxNl/applied_programming_for_geoscience_book"><img src="images/logo.svg" alt="Logo of this book, showing an abstracted world map made of special characters" class="cover" width="350" height="460"></a></p>
 <section id="content" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="content">Content</h2>
-<p>This online book contains the material for the R teaching course “Applied R Programming for Geoscience — From Data Cleaning to Publishing”. The content of this course focusses on showing the capabilities of programming languages (in this cas R) for every task throughout most common in research project workflows: starting with data cleaning, data wrangling, analysis, high quality visualisations to writing manuscripts for peer-reviewed journal publishing — all done in one single free open-source environment. Due to the contrained time, this course will not go into details of each of these steps. It will rather show that all this can be done in R. It will also inform about the benefits of switching from “point-and-click”, graphical user interface based software to a programming language and provide tipps, tricks and information on self-teaching.</p>
+<p>Welcome to <em>Applied R Programming for Geoscience — From Data Cleaning to Publishing</em>! This online book contains the material for the corresponding R teaching course. The content of this course focusses on showing the capabilities of programming languages (in this cas R) for every task throughout most common in research project workflows: starting with</p>
+<ul>
+<li>data import, cleaning and wrangling,</li>
+<li>analysis,</li>
+<li>high quality visualizations to</li>
+<li>writing manuscripts for peer-reviewed journal publishing.</li>
+</ul>
+<p>all done in one single free open-source environment. Due to the contrained time, this course is not meant to be a comprehensive programming with R introductory course and therefore, will not go into details of each of the mentioned steps. It will rather show that all this can be done in R. I hope that seeing the advantages of it will encourage all participants to further keep learning programming and applying all the useful tools that come with it. As compensation, this book provides hints to online resources that help to get a foot into the door of improving R programming skills.</p>
+<p><lord-icon colors="primary:black,tertiary:#619ab3" axis-x="50" src="https://cdn.lordicon.com/dxoycpzg.json" trigger="morph"></lord-icon></p>
 </section>
 <section id="acknowledgements" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
@@ -197,6 +245,121 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {

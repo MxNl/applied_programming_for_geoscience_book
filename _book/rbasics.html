@@ -37,10 +37,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -60,8 +62,10 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
 
 
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body class="nav-sidebar floating">
@@ -84,6 +88,25 @@ ul.task-list li input[type="checkbox"] {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Applied Programming for Geosciences</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/MxNl/applied_programming_for_geoscience_book" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="" title="Download" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-download"></i></a>
+    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="./Applied-Programming-for-Geosciences.pdf">
+            <i class="bi bi-bi-file-pdf pe-1"></i>
+          Download PDF
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="./Applied-Programming-for-Geosciences.epub">
+            <i class="bi bi-bi-journal pe-1"></i>
+          Download ePub
+          </a>
+        </li>
+    </ul>
+  <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
     </div>
       </div>
       <div class="mt-2 flex-shrink-0 align-items-center">
@@ -115,6 +138,21 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Exploratory Data Analysis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./visualization.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Visualizations</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./manuscriptwriting.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
   </div>
 </li>
@@ -123,7 +161,20 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#overview-and-terms" id="toc-overview-and-terms" class="nav-link active" data-scroll-target="#overview-and-terms"><span class="toc-section-number">2.1</span>  Overview and Terms</a></li>
+  <li><a href="#data-types" id="toc-data-types" class="nav-link" data-scroll-target="#data-types"><span class="toc-section-number">2.2</span>  Data types</a></li>
+  <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources"><span class="toc-section-number">2.3</span>  Further Resources</a>
+  <ul class="collapse">
+  <li><a href="#programming-with-r" id="toc-programming-with-r" class="nav-link" data-scroll-target="#programming-with-r"><span class="toc-section-number">2.3.1</span>  Programming with R</a></li>
+  <li><a href="#learning-r-through-challenges-and-small-projects" id="toc-learning-r-through-challenges-and-small-projects" class="nav-link" data-scroll-target="#learning-r-through-challenges-and-small-projects"><span class="toc-section-number">2.3.2</span>  Learning R — through Challenges and small Projects</a></li>
+  <li><a href="#community" id="toc-community" class="nav-link" data-scroll-target="#community"><span class="toc-section-number">2.3.3</span>  Community</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/MxNl/applied_programming_for_geoscience_book/edit/main/rbasics.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -145,8 +196,63 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="overview-and-terms" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="overview-and-terms"><span class="header-section-number">2.1</span> Overview and Terms</h2>
+<p>sada</p>
+<ul>
+<li>R</li>
+<li>RStudio</li>
+<li>git</li>
+<li>github</li>
+<li>quarto</li>
+<li>Packages</li>
+<li>Function</li>
+<li>Vignette</li>
+</ul>
+</section>
+<section id="data-types" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="data-types"><span class="header-section-number">2.2</span> Data types</h2>
+<p>text.</p>
+</section>
+<section id="further-resources" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="further-resources"><span class="header-section-number">2.3</span> Further Resources</h2>
+<section id="programming-with-r" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="programming-with-r"><span class="header-section-number">2.3.1</span> Programming with R</h3>
+<ul>
+<li>Learning fundamental programming in R for data science with the <code>tidyverse</code> meta-package:<br><a href="https://r4ds.had.co.nz/index.html">R for Data Science | by Hadley Wickham and Garret Grolemund</a></li>
+<li>Introduction into R:<br><a href="https://livebook.manning.com/book/r-in-action-third-edition/r-in-action/4">R in Action | by Robert I. Kabacoff</a> (only partially available for free)</li>
+<li>In-depth best practices for efficient R programming:<br><a href="https://csgillespie.github.io/efficientR/">Efficient R programming | by Colin Gillespie and Robin Lovelace</a></li>
+<li>Wrangling, analyzing, and vizualising geo data:<br><a href="https://geocompr.robinlovelace.net/index.html">Geocomputation with R | by Robin Lovelace, Jakub Nowosad and Jannes Muenchow</a></li>
+<li>Handling spatial data in R:<br><a href="https://r-spatial.org/book/">Spatial Data Science | by Edzer Pebesma and Roger Bivand</a></li>
+<li>All you need to know about R with git and github:<br><a href="https://happygitwithr.com/index.html">Happy Git and GitHub for the useR | by Jenny Bryan</a></li>
+<li>Basics of machine learning in R using the <code>tidymodels</code> meta-package:<br><a href="https://www.tmwr.org/">Tidy Modeling with R | by Max Kuhn and Julia Silge</a></li>
+<li>Introduction and in-depth knowledge for writing R packages:<br><a href="https://r-pkgs.org/">R Packages | by Hadley Wickham and Jenny Bryan</a></li>
+</ul>
+</section>
+<section id="learning-r-through-challenges-and-small-projects" class="level3" data-number="2.3.2">
+<h3 data-number="2.3.2" class="anchored" data-anchor-id="learning-r-through-challenges-and-small-projects"><span class="header-section-number">2.3.2</span> Learning R — through Challenges and small Projects</h3>
+<p>For speeding up the learning process it is more important to practise rather than reading books. There are many great places in the internet where you can find smaller and bigger data science challenges and projects. I really recommend to visit those places and just learn by directly solving tasks. Most important ones are:</p>
+<ul>
+<li><p>Kaggle</p></li>
+<li><p>TidyTuesday</p></li>
+<li><p>AdventOfCode</p></li>
+<li><p><a href="https://30daymapchallenge.com/">30DayMapChallenge</a></p></li>
+</ul>
+</section>
+<section id="community" class="level3" data-number="2.3.3">
+<h3 data-number="2.3.3" class="anchored" data-anchor-id="community"><span class="header-section-number">2.3.3</span> Community</h3>
+<p>The R community is very friendly and supportive community. Most important packages have great documentations for learning new R packages and frameworks. The R community has an extraordinary sense of sharing knowledge and experiences. Important platforms for getting engaged with the R community but also for getting help with questions, issues and bugs are</p>
+<ul>
+<li><p><a href="https://stackoverflow.com/questions/tagged/r">Stackoverflow</a> for getting help with questions</p></li>
+<li><p><a href="https://community.rstudio.com/">Posit community forum (formerly Rstudio)</a> for getting help with questions</p></li>
+<li><p><a href="https://twitter.com/search?q=%23rstats&amp;src=typed_query">Twitter with #rstats</a> for keeping track of latest developments, tips, tricks and getting in touch with the active R community members</p></li>
+<li><p><a href="https://mastodon.social/">Mastodon</a> with #rstats, same same</p></li>
+<li><p><a href="https://github.com/">Github</a> for getting help with bugs, getting to know the developers behind packages or simply hosting and versioning your own code</p></li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -169,6 +275,121 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
