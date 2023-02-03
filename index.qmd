@@ -1,0 +1,6 @@
+## Content {.unnumbered}
+
+This online book contains the material for the R teaching course "Applied R Programming for Geoscience --- From Data Cleaning to Publishing".
+The content of this course focusses on showing the capabilities of programming languages (in this cas R) for every task throughout most common in research project workflows: starting with data cleaning, data wrangling, analysis, high quality visualisations to writing manuscripts for peer-reviewed journal publishing --- all done in one single free open-source environment. Due to the contrained time, this course will not go into details of each of these steps. It will rather show that all this can be done in R. It will also inform about the benefits of switching from "point-and-click", graphical user interface based software to a programming language and provide tipps, tricks and information on self-teaching.
+
+## Acknowledgements {.unnumbered}

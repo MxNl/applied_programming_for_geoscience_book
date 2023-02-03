@@ -1,0 +1,13 @@
+# Introduction
+
+## Content
+
+This online book contains the material for the R teaching course "Applied R Programming for Geoscience --- From Data Cleaning to Publishing". The content of this course focusses on showing the capabilities of programming languages (in this cas R) for every task throughout most common in research project workflows: starting with data cleaning, data wrangling, analysis, high quality visualisations to writing manuscripts for peer-reviewed journal publishing --- all done in one single free open-source environment. Due to the contrained time, this course will not go into details of each of these steps. It will rather show that all this can be done in R. It will also inform about the benefits of switching from "point-and-click", graphical user interface based software to a programming language and provide tipps, tricks and information on self-teaching.
+
+## Motivation
+
+During my last few years as early career scientist in hydrogeology, I noticed something, that has been studied and written about a lot already: Reproducibility! Reproducibility in science! And there are even concepts and tools for adressing this issue and to ensure a high level of reproducibility in science since the early days of computers and programming.
+
+## Readership (who is this for?)
+
+This course or book is meant for anybody interested in learning essential tools for data science and reproducibility in science. There is no prior knowledge of programming or R required, although in could be helpful.

@@ -1,0 +1,27 @@
+project:
+  type: book
+
+book:
+  title: "Applied Programming for Geosciences"
+  subtitle: "From Data Cleaning to Publishing"
+  author: "Maximilian Nölscher"
+  date: "3.2.2023"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - rbasics.qmd
+    - data.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+  epub:
+    cover-image: cover.png
+
+editor: visual
+
