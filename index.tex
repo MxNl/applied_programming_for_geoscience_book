@@ -1,0 +1,477 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrreprt}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{5}
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Applied Programming for Geosciences},
+  pdfauthor={Maximilian Nölscher},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Applied Programming for Geosciences}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{From Data Cleaning to Publishing}
+\author{Maximilian Nölscher}
+\date{3/2/23}
+
+\begin{document}
+\maketitle
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, frame hidden, borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, sharp corners, breakable, enhanced]}{\end{tcolorbox}}\fi
+
+\renewcommand*\contentsname{Table of contents}
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\bookmarksetup{startatroot}
+
+\hypertarget{content}{%
+\chapter*{Content}\label{content}}
+\addcontentsline{toc}{chapter}{Content}
+
+\markboth{Content}{Content}
+
+Welcome to \emph{Applied R Programming for Geoscience --- From Data
+Cleaning to Publishing}! This online book contains the material for the
+corresponding R teaching course. The content of this course focusses on
+showing the capabilities of programming languages (in this cas R) for
+every task throughout most common in research project workflows:
+starting with
+
+\begin{itemize}
+\tightlist
+\item
+  data import, cleaning and wrangling,
+\item
+  analysis,
+\item
+  high quality visualizations to
+\item
+  writing manuscripts for peer-reviewed journal publishing.
+\end{itemize}
+
+all done in one single free open-source environment. Due to the
+contrained time, this course is not meant to be a comprehensive
+programming with R introductory course and therefore, will not go into
+details of each of the mentioned steps. It will rather show that all
+this can be done in R. I hope that seeing the advantages of it will
+encourage all participants to further keep learning programming and
+applying all the useful tools that come with it. As compensation, this
+book provides hints to online resources that help to get a foot into the
+door of improving R programming skills.
+
+\hypertarget{acknowledgements}{%
+\section*{Acknowledgements}\label{acknowledgements}}
+\addcontentsline{toc}{section}{Acknowledgements}
+
+\markright{Acknowledgements}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{introduction-li-dxoycpzg}{%
+\chapter{Introduction \{\{\textless=``\,'' li=``\,'' dxoycpzg=``\,''
+\textgreater\}=``\,``\}}\label{introduction-li-dxoycpzg}}
+
+\hypertarget{motivation}{%
+\section{Motivation}\label{motivation}}
+
+During my last few years as early career scientist in hydrogeology, I
+noticed something, that has been studied and written about a lot
+already: Reproducibility! Reproducibility in science! And there are even
+concepts and tools for adressing this issue and to ensure a high level
+of reproducibility in science since the early days of computers and
+programming.
+
+\hypertarget{readership-who-is-this-for}{%
+\section{Readership (who is this
+for?)}\label{readership-who-is-this-for}}
+
+This course or book is meant for anybody
+
+\begin{itemize}
+\tightlist
+\item
+  interested in learning essential \textbf{tools for data science}
+\item
+  interested in state-of-the-art methods for \textbf{reproducibility in
+  science}
+\item
+  \textbf{with or without} prior knowledge of programming in general or
+  R (although it wouldn't hurt of course)
+\end{itemize}
+
+\hypertarget{about-me}{%
+\section{About Me}\label{about-me}}
+
+I am working as a researcher in the field of machine learning and
+hydrogeology at the Federal Institute for Geoscience and Natural
+Resources (BGR). My projects include modelling groundwater quality
+parameters for producing maps as well as modelling groundwater level
+time series for making predictions. For this purpose I startet learning
+R mainly and a little bit Python a few years ago. Besides this, I enjoy
+using R for making data visualizations and teaching R and its
+capabilities to others.
+
+\bookmarksetup{startatroot}
+
+\hypertarget{r-basics}{%
+\chapter{R Basics}\label{r-basics}}
+
+\hypertarget{overview-and-terms}{%
+\section{Overview and Terms}\label{overview-and-terms}}
+
+sada
+
+\begin{itemize}
+\tightlist
+\item
+  R
+\item
+  RStudio
+\item
+  git
+\item
+  github
+\item
+  quarto
+\item
+  Packages
+\item
+  Function
+\item
+  Vignette
+\end{itemize}
+
+\hypertarget{data-types}{%
+\section{Data types}\label{data-types}}
+
+text.
+
+\hypertarget{further-resources}{%
+\section{Further Resources}\label{further-resources}}
+
+\hypertarget{programming-with-r}{%
+\subsection{Programming with R}\label{programming-with-r}}
+
+\begin{itemize}
+\tightlist
+\item
+  Learning fundamental programming in R for data science with the
+  \texttt{tidyverse}
+  meta-package:\href{https://r4ds.had.co.nz/index.html}{R for Data
+  Science \textbar{} by Hadley Wickham and Garret Grolemund}
+\item
+  Introduction into
+  R:\href{https://livebook.manning.com/book/r-in-action-third-edition/r-in-action/4}{R
+  in Action \textbar{} by Robert I. Kabacoff} (only partially available
+  for free)
+\item
+  In-depth best practices for efficient R
+  programming:\href{https://csgillespie.github.io/efficientR/}{Efficient
+  R programming \textbar{} by Colin Gillespie and Robin Lovelace}
+\item
+  Wrangling, analyzing, and vizualising geo
+  data:\href{https://geocompr.robinlovelace.net/index.html}{Geocomputation
+  with R \textbar{} by Robin Lovelace, Jakub Nowosad and Jannes
+  Muenchow}
+\item
+  Handling spatial data in R:\href{https://r-spatial.org/book/}{Spatial
+  Data Science \textbar{} by Edzer Pebesma and Roger Bivand}
+\item
+  All you need to know about R with git and
+  github:\href{https://happygitwithr.com/index.html}{Happy Git and
+  GitHub for the useR \textbar{} by Jenny Bryan}
+\item
+  Basics of machine learning in R using the \texttt{tidymodels}
+  meta-package:\href{https://www.tmwr.org/}{Tidy Modeling with R
+  \textbar{} by Max Kuhn and Julia Silge}
+\item
+  Introduction and in-depth knowledge for writing R
+  packages:\href{https://r-pkgs.org/}{R Packages \textbar{} by Hadley
+  Wickham and Jenny Bryan}
+\end{itemize}
+
+\hypertarget{learning-r-through-challenges-and-small-projects}{%
+\subsection{Learning R --- through Challenges and small
+Projects}\label{learning-r-through-challenges-and-small-projects}}
+
+For speeding up the learning process it is more important to practise
+rather than reading books. There are many great places in the internet
+where you can find smaller and bigger data science challenges and
+projects. I really recommend to visit those places and just learn by
+directly solving tasks. Most important ones are:
+
+\begin{itemize}
+\item
+  Kaggle
+\item
+  TidyTuesday
+\item
+  AdventOfCode
+\item
+  \href{https://30daymapchallenge.com/}{30DayMapChallenge}
+\end{itemize}
+
+\hypertarget{community}{%
+\subsection{Community}\label{community}}
+
+The R community is very friendly and supportive community. Most
+important packages have great documentations for learning new R packages
+and frameworks. The R community has an extraordinary sense of sharing
+knowledge and experiences. Important platforms for getting engaged with
+the R community but also for getting help with questions, issues and
+bugs are
+
+\begin{itemize}
+\item
+  \href{https://stackoverflow.com/questions/tagged/r}{Stackoverflow} for
+  getting help with questions
+\item
+  \href{https://community.rstudio.com/}{Posit community forum (formerly
+  Rstudio)} for getting help with questions
+\item
+  \href{https://twitter.com/search?q=\%23rstats\&src=typed_query}{Twitter
+  with \#rstats} for keeping track of latest developments, tips, tricks
+  and getting in touch with the active R community members
+\item
+  \href{https://mastodon.social/}{Mastodon} with \#rstats, same same
+\item
+  \href{https://github.com/}{Github} for getting help with bugs, getting
+  to know the developers behind packages or simply hosting and
+  versioning your own code
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{the-data}{%
+\chapter{The Data}\label{the-data}}
+
+\hypertarget{import}{%
+\section{Import}\label{import}}
+
+\hypertarget{cleaning}{%
+\section{Cleaning}\label{cleaning}}
+
+\hypertarget{imputation}{%
+\section{Imputation}\label{imputation}}
+
+\hypertarget{wrangling}{%
+\section{Wrangling}\label{wrangling}}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{exploratory-data-analysis}{%
+\chapter{Exploratory Data Analysis}\label{exploratory-data-analysis}}
+
+\hypertarget{missing-data}{%
+\section{Missing Data}\label{missing-data}}
+
+\hypertarget{distributions-and-correlations}{%
+\section{Distributions and
+Correlations}\label{distributions-and-correlations}}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{visualizations}{%
+\chapter{Visualizations}\label{visualizations}}
+
+This is a very helpful tool for finding out the best suited chart type
+for a data visualization of a given data structure:
+
+\bookmarksetup{startatroot}
+
+\hypertarget{the-data-1}{%
+\chapter{The Data}\label{the-data-1}}
+
+\hypertarget{import-1}{%
+\section{Import}\label{import-1}}
+
+\hypertarget{cleaning-1}{%
+\section{Cleaning}\label{cleaning-1}}
+
+\hypertarget{imputation-1}{%
+\section{Imputation}\label{imputation-1}}
+
+\hypertarget{wrangling-1}{%
+\section{Wrangling}\label{wrangling-1}}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{references}{%
+\chapter*{References}\label{references}}
+\addcontentsline{toc}{chapter}{References}
+
+\markboth{References}{References}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{0}{0}
+\end{CSLReferences}
+
+
+
+\end{document}
