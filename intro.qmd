@@ -1,12 +1,14 @@
 # Introduction
 
-<center>
 {{< li lupuorrc trigger=loop delay=5000 speed=1.0 colors=secondary:#619ab3 >}}
-</center>
 
 ## Motivation
 
 During my last few years as early career scientist in hydrogeology, I noticed something, that has been studied and written about a lot already: Reproducibility! Reproducibility in science! And there are even concepts and tools for adressing this issue and to ensure a high level of reproducibility in science since the early days of computers and programming.
+
+```{r, echo=FALSE, out.width="50%", fig.cap="Artwork by allison_horst.", fig.alt="A digital cartoon with two illustrations: the top shows the R-logo with a scary face, and a small scared little fuzzy monster holding up a white flag in surrender while under a dark storm cloud. The text above says 'at first I was like...' The lower cartoon is a friendly, smiling R-logo jumping up to give a happy fuzzy monster a high-five under a smiling sun and next to colorful flowers. The text above the bottom illustration reads 'but now it's like...'"}
+knitr::include_graphics("images/allison_horst_R_cartoon_Rthennow.png")
+```
 
 ## Readership (who is this for?)
 

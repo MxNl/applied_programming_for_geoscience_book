@@ -19,14 +19,6 @@ book:
   repo-url: https://github.com/MxNl/applied_programming_for_geoscience_book
   repo-actions: [edit]
   downloads: [pdf, epub]
-
-comments:
-  hypothesis: true
-
-css: style.css
-
-bibliography: references.bib
-
 format:
   html:
     theme:
@@ -37,5 +29,16 @@ format:
   epub:
     cover-image: images/logo.svg
 
+comments:
+  hypothesis: true
+
+css: style.css
+
+bibliography: references.bib
+
 editor: visual
+
+filters:
+   - lightbox
+lightbox: auto
 

@@ -25,7 +25,7 @@
     "href": "intro.html#motivation",
     "title": "1  Introduction",
     "section": "1.1 Motivation",
-    "text": "1.1 Motivation\nDuring my last few years as early career scientist in hydrogeology, I noticed something, that has been studied and written about a lot already: Reproducibility! Reproducibility in science! And there are even concepts and tools for adressing this issue and to ensure a high level of reproducibility in science since the early days of computers and programming."
+    "text": "1.1 Motivation\nDuring my last few years as early career scientist in hydrogeology, I noticed something, that has been studied and written about a lot already: Reproducibility! Reproducibility in science! And there are even concepts and tools for adressing this issue and to ensure a high level of reproducibility in science since the early days of computers and programming.\n\n\n\n\n\nArtwork by allison_horst."
   },
   {
     "objectID": "intro.html#readership-who-is-this-for",
@@ -60,6 +60,55 @@
     "href": "rbasics.html#further-resources",
     "title": "2  R Basics",
     "section": "2.3 Further Resources",
-    "text": "2.3 Further Resources\n\n2.3.1 Programming with R\n\nLearning fundamental programming in R for data science with the tidyverse meta-package:R for Data Science | by Hadley Wickham and Garret Grolemund\nIntroduction into R:R in Action | by Robert I. Kabacoff (only partially available for free)\nIn-depth best practices for efficient R programming:Efficient R programming | by Colin Gillespie and Robin Lovelace\nWrangling, analyzing, and vizualising geo data:Geocomputation with R | by Robin Lovelace, Jakub Nowosad and Jannes Muenchow\nHandling spatial data in R:Spatial Data Science | by Edzer Pebesma and Roger Bivand\nAll you need to know about R with git and github:Happy Git and GitHub for the useR | by Jenny Bryan\nBasics of machine learning in R using the tidymodels meta-package:Tidy Modeling with R | by Max Kuhn and Julia Silge\nIntroduction and in-depth knowledge for writing R packages:R Packages | by Hadley Wickham and Jenny Bryan\n\n\n\n2.3.2 Learning R — through Challenges and small Projects\nFor speeding up the learning process it is more important to practise rather than reading books. There are many great places in the internet where you can find smaller and bigger data science challenges and projects. I really recommend to visit those places and just learn by directly solving tasks. Most important ones are:\n\nKaggle\nTidyTuesday\nAdventOfCode\n30DayMapChallenge\n\n\n\n2.3.3 Community\nThe R community is very friendly and supportive community. Most important packages have great documentations for learning new R packages and frameworks. The R community has an extraordinary sense of sharing knowledge and experiences. Important platforms for getting engaged with the R community but also for getting help with questions, issues and bugs are\n\nStackoverflow for getting help with questions\nPosit community forum (formerly Rstudio) for getting help with questions\nTwitter with #rstats for keeping track of latest developments, tips, tricks and getting in touch with the active R community members\nMastodon with #rstats, same same\nGithub for getting help with bugs, getting to know the developers behind packages or simply hosting and versioning your own code"
+    "text": "2.3 Further Resources\nIn the following, some important resources are provided for different purposes such as getting started with programming in R, doing more sophisticated stuff, related topics to best-practices in programming etc.\n\n2.3.1 Online Books\n\nLearning fundamental programming in R for data science with the tidyverse meta-package:R for Data Science | by Hadley Wickham and Garret Grolemund\nIntroduction into R:R in Action | by Robert I. Kabacoff (only partially available for free)\nAdvanced R programming:Advanced R | by Hadley Wickham\nIn-depth best practices for efficient R programming:Efficient R programming | by Colin Gillespie and Robin Lovelace\nWrangling, analyzing, and vizualising geo data:Geocomputation with R | by Robin Lovelace, Jakub Nowosad and Jannes Muenchow\nHandling spatial data in R:Spatial Data Science | by Edzer Pebesma and Roger Bivand\nAll you need to know about R with git and github:Happy Git and GitHub for the useR | by Jenny Bryan\nBasics of machine learning in R using the tidymodels meta-package:Tidy Modeling with R | by Max Kuhn and Julia Silge\nIntroduction and in-depth knowledge for writing R packages:R Packages | by Hadley Wickham and Jenny Bryan\n\n\n\n2.3.2 Hands On Exercises — Learning R through Challenges and small Projects\nFor speeding up the learning process it is more important to practise rather than reading books. There are many great places in the internet where you can find smaller and bigger data science challenges and projects. I really recommend to visit those places and just learn by directly solving tasks. Most important ones are:\n\nKaggle\nTidyTuesday and #tidytuesday\nAdventOfCode and #AdventOfCode\n30DayMapChallenge\n\n\n\n2.3.3 Cheatsheets\nCheatsheets are very condensed summaries of a documentation regarding single R packages or focussing on a specific functionality. They can be compared with those sheets students might take with them when writting a test. A quite comprehensive collection of cheatsheets can be found at the Posit Website here. Some important and basic ones are\n\nRstudio IDE\nGit + GitHub\nBase R\nPlotting with `ggplot` package\nSpatial data with `sf` package\n\n\n\n2.3.4 Community\nThe R community is a very friendly and supportive community. Most important packages have great documentations for learning new R packages and frameworks. The R community has an extraordinary sense of sharing knowledge and experiences. Important platforms for getting engaged with the R community but also for getting help with questions, issues and bugs are\n\nStackoverflow for getting help with questions\nPosit community forum (formerly Rstudio) for getting help with questions\nTwitter with #rstats for keeping track of latest developments, tips, tricks and getting in touch with the active R community members\nMastodon with #rstats, same same\nGithub for getting help with bugs, getting to know the developers behind packages or simply hosting and versioning your own code"
+  },
+  {
+    "objectID": "data.html#import",
+    "href": "data.html#import",
+    "title": "3  The Data",
+    "section": "3.1 Import",
+    "text": "3.1 Import"
+  },
+  {
+    "objectID": "data.html#cleaning",
+    "href": "data.html#cleaning",
+    "title": "3  The Data",
+    "section": "3.2 Cleaning",
+    "text": "3.2 Cleaning"
+  },
+  {
+    "objectID": "data.html#imputation",
+    "href": "data.html#imputation",
+    "title": "3  The Data",
+    "section": "3.3 Imputation",
+    "text": "3.3 Imputation"
+  },
+  {
+    "objectID": "data.html#wrangling",
+    "href": "data.html#wrangling",
+    "title": "3  The Data",
+    "section": "3.4 Wrangling",
+    "text": "3.4 Wrangling"
+  },
+  {
+    "objectID": "intro.html#cartoon-by-allison-horst",
+    "href": "intro.html#cartoon-by-allison-horst",
+    "title": "1  Introduction",
+    "section": "1.2 ",
+    "text": "1.2 \n</center>"
+  },
+  {
+    "objectID": "analysis.html#missing-data",
+    "href": "analysis.html#missing-data",
+    "title": "4  Exploratory Data Analysis",
+    "section": "4.1 Missing Data",
+    "text": "4.1 Missing Data"
+  },
+  {
+    "objectID": "analysis.html#distributions-and-correlations",
+    "href": "analysis.html#distributions-and-correlations",
+    "title": "4  Exploratory Data Analysis",
+    "section": "4.2 Distributions and Correlations",
+    "text": "4.2 Distributions and Correlations"
   }
 ]

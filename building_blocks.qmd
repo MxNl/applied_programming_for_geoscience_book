@@ -1,0 +1,22 @@
+
+# Image
+
+## Markdown
+
+[![Cartoon by Allison Horst](images/allison_horst_R_cartoon_Rthennow.png){width="50%", fig-align="center", fig-alt='A digital cartoon with two illustrations: the top shows the R-logo with a scary face, and a small scared little fuzzy monster holding up a white flag in surrender while under a dark storm cloud. The text above says "at first I was like..." The lower cartoon is a friendly, smiling R-logo jumping up to give a happy fuzzy monster a high-five under a smiling sun and next to colorful flowers. The text above the bottom illustration reads "but now it's like..."'}](https://allisonhorst.com/allison-horst)
+
+## Knitr
+
+```{r, echo=FALSE, out.width="50%", fig.cap="Cartoon by Allison Horst", fig.alt="A digital cartoon with two illustrations: the top shows the R-logo with a scary face, and a small scared little fuzzy monster holding up a white flag in surrender while under a dark storm cloud. The text above says 'at first I was like...' The lower cartoon is a friendly, smiling R-logo jumping up to give a happy fuzzy monster a high-five under a smiling sun and next to colorful flowers. The text above the bottom illustration reads 'but now it's like...'"}
+knitr::include_graphics("images/allison_horst_R_cartoon_Rthennow.png")
+```
+
+# iframe
+```{r, echo=FALSE, out.width="100%", fig.cap="Link to Website: [https://www.data-to-viz.com/](https://www.data-to-viz.com/)"}
+knitr::include_url("https://www.data-to-viz.com/")
+```
+
+# Lordicon
+<center>
+{{< li dxoycpzg trigger=morph x=50 colors=primary:black,tertiary:#619ab3 >}}
+</center>
