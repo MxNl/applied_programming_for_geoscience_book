@@ -4,15 +4,15 @@
 
 ## Motivation
 
-During my last few years as early career scientist in hydrogeology, I noticed something, that has been studied and written about a lot already: Reproducibility! Reproducibility in science! And there are even concepts and tools for adressing this issue and to ensure a high level of reproducibility in science since the early days of computers and programming.
+During my last few years as early career scientist in hydrogeology, I stumbled about this again and again: Reproducibility! Reproducibility in science! It is not something that students get teached really at university. But reproducibility actually should be a fundamental principle in research. And who hasn't faced a situation where you wanted to repeat or adapt parts of someone others methods and you simply failed. You failed, either because the methods weren't explained well enough or the analysis was done in a proprietary software or a software with graphical user interface (e.g. QGIS, FEFLOW, GeODIN) or the source code was not attached to the article. And reproducibility is a big issue throughout all scientific disciplines and its lack has been also studied for many years. Not really surprisingly, there are concepts and tools for ensuring reproducibility for many decades already. The most important concept is literate programming. Literate programming is the idea of combining code of a programming language, generated figures and tables by this code together with descriptive text, all in one script. One important consequence is that after you make changes to this script your analysis, figures and results are always up-to-date. Besides this, there are many other advantages when sticking to this concept and its tools. In this course, we will use tools that follow this basic concept of literate programming. Finally, I'm convinced that literate programming should be become a default tool in research whereever it's possible.
 
-```{r, echo=FALSE, out.width="50%", fig.cap="Artwork by allison_horst.", fig.alt="A digital cartoon with two illustrations: the top shows the R-logo with a scary face, and a small scared little fuzzy monster holding up a white flag in surrender while under a dark storm cloud. The text above says 'at first I was like...' The lower cartoon is a friendly, smiling R-logo jumping up to give a happy fuzzy monster a high-five under a smiling sun and next to colorful flowers. The text above the bottom illustration reads 'but now it's like...'"}
+```{r, echo=FALSE, out.width="50%", fig.cap="Artwork by <a href='https://twitter.com/allison_horst'>\\@allison_horst</a>.", fig.alt="A digital cartoon with two illustrations: the top shows the R-logo with a scary face, and a small scared little fuzzy monster holding up a white flag in surrender while under a dark storm cloud. The text above says 'at first I was like...' The lower cartoon is a friendly, smiling R-logo jumping up to give a happy fuzzy monster a high-five under a smiling sun and next to colorful flowers. The text above the bottom illustration reads 'but now it's like...'"}
 knitr::include_graphics("images/allison_horst_R_cartoon_Rthennow.png")
 ```
 
 ## Readership (who is this for?)
 
-This course or book is meant for anybody
+This course or book is meant for anybody who is
 
 -   interested in learning essential **tools for data science**
 -   interested in state-of-the-art methods for **reproducibility in science**

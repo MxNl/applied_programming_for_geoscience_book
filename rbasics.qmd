@@ -1,5 +1,25 @@
 # R Basics
 
+```{r, echo=FALSE}
+library(rvest)
+
+pkgs <- read_html("https://cran.r-project.org/web/packages/available_packages_by_name.html")
+mylines <- pkgs %>% 
+    html_nodes("tr") %>%
+    xml2::xml_text()
+
+nb_pkgs <- length(which(sapply(mylines, nchar)>5))
+```
+
+
+R is often described and introduced as in the following
+
+> "R is a programming language for statistical computing and graphics supported by the R Core Team and the R Foundation for Statistical Computing. Created by statisticians Ross Ihaka and Robert Gentleman, R is used among data miners, bioinformaticians and statisticians for data analysis and developing statistical software.[7] Users have created packages to augment the functions of the R language."
+>
+> `r tufte::quote_footer('--- Wikipedia')`
+
+But today, are is much more than just for statistical analysis. Thousands of packages have been added over the last decades by its very active, supportive and nerdy community. `r paste0("Currently, there are ", nb_pkgs, " packages available on CRAN as of today (", Sys.Date(), ")")` excluding packages that are only availably via other sources such as Github. Some packages have a more general purpose and can be applied widely, other packages are for very specific and distinct tasks. 
+
 ## Overview and Terms
 
 sada

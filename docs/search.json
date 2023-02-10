@@ -25,14 +25,14 @@
     "href": "intro.html#motivation",
     "title": "1  Introduction",
     "section": "1.1 Motivation",
-    "text": "1.1 Motivation\nDuring my last few years as early career scientist in hydrogeology, I noticed something, that has been studied and written about a lot already: Reproducibility! Reproducibility in science! And there are even concepts and tools for adressing this issue and to ensure a high level of reproducibility in science since the early days of computers and programming.\n\n\n\n\n\nArtwork by allison_horst."
+    "text": "1.1 Motivation\nDuring my last few years as early career scientist in hydrogeology, I stumbled about this again and again: Reproducibility! Reproducibility in science! It is not something that students get teached really at university. But reproducibility actually should be a fundamental principle in research. And who hasn’t faced a situation where you wanted to repeat or adapt parts of someone others methods and you simply failed. You failed, either because the methods weren’t explained well enough or the analysis was done in a proprietary software or a software with graphical user interface (e.g. QGIS, FEFLOW, GeODIN) or the source code was not attached to the article. And reproducibility is a big issue throughout all scientific disciplines and its lack has been also studied for many years. Not really surprisingly, there are concepts and tools for ensuring reproducibility for many decades already. The most important concept is literate programming. Literate programming is the idea of combining code of a programming language, generated figures and tables by this code together with descriptive text, all in one script. One important consequence is that after you make changes to this script your analysis, figures and results are always up-to-date. Besides this, there are many other advantages when sticking to this concept and its tools. In this course, we will use tools that follow this basic concept of literate programming. Finally, I’m convinced that literate programming should be become a default tool in research whereever it’s possible.\n\n\n\n\n\nArtwork by @allison_horst."
   },
   {
     "objectID": "intro.html#readership-who-is-this-for",
     "href": "intro.html#readership-who-is-this-for",
     "title": "1  Introduction",
     "section": "1.2 Readership (who is this for?)",
-    "text": "1.2 Readership (who is this for?)\nThis course or book is meant for anybody\n\ninterested in learning essential tools for data science\ninterested in state-of-the-art methods for reproducibility in science\nwith or without prior knowledge of programming in general or R (although it wouldn’t hurt of course)"
+    "text": "1.2 Readership (who is this for?)\nThis course or book is meant for anybody who is\n\ninterested in learning essential tools for data science\ninterested in state-of-the-art methods for reproducibility in science\nwith or without prior knowledge of programming in general or R (although it wouldn’t hurt of course)"
   },
   {
     "objectID": "intro.html#about-me",

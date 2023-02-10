@@ -297,6 +297,19 @@
         "xfun"
       ]
     },
+    "tufte": {
+      "Package": "tufte",
+      "Version": "0.12",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "c291ba0e4194e339f7d04cd6b013f223",
+      "Requirements": [
+        "htmltools",
+        "knitr",
+        "rmarkdown",
+        "xfun"
+      ]
+    },
     "vctrs": {
       "Package": "vctrs",
       "Version": "0.5.2",
