@@ -1,9 +1,5 @@
-# The Data
+# Literate Programming
 
-## Import
+## Output formats
 
-## Cleaning
-
-## Imputation
-
-## Wrangling
+## ...

@@ -10,10 +10,11 @@ During my last few years as early career scientist in hydrogeology, I stumbled a
 knitr::include_graphics("images/allison_horst_R_cartoon_Rthennow.png")
 ```
 
-## Readership (who is this for?)
+## Who is this book for?
 
 This course or book is meant for anybody who is
 
+-   a **course participant**
 -   interested in learning essential **tools for data science**
 -   interested in state-of-the-art methods for **reproducibility in science**
 -   **with or without** prior knowledge of programming in general or R (although it wouldn't hurt of course)

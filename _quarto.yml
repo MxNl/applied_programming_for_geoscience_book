@@ -22,15 +22,16 @@ book:
 format:
   html:
     theme:
-      light: cosmo
+      light: [cosmo, light-theme.scss]
       dark: darkly
+    code-link: true
   pdf:
     documentclass: scrreprt
   epub:
     cover-image: images/logo.svg
 
-comments:
-  hypothesis: true
+# comments:
+  # hypothesis: true
 
 css: style.css
 

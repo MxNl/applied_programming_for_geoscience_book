@@ -20,6 +20,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -62,7 +125,6 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script async="" src="https://hypothes.is/embed.js"></script>
 
 
 <link rel="stylesheet" href="style.css">
@@ -148,7 +210,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./manuscriptwriting.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Data</span></a>
+  <a href="./manuscriptwriting.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Literate Programming</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -165,7 +227,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#overview-and-terms" id="toc-overview-and-terms" class="nav-link active" data-scroll-target="#overview-and-terms"><span class="toc-section-number">2.1</span>  Overview and Terms</a></li>
+  <li><a href="#overview-and-terms" id="toc-overview-and-terms" class="nav-link active" data-scroll-target="#overview-and-terms"><span class="toc-section-number">2.1</span>  Overview and Terms</a>
+  <ul class="collapse">
+  <li><a href="#base-r" id="toc-base-r" class="nav-link" data-scroll-target="#base-r"><span class="toc-section-number">2.1.1</span>  “Base R”</a></li>
+  <li><a href="#functions" id="toc-functions" class="nav-link" data-scroll-target="#functions"><span class="toc-section-number">2.1.2</span>  Functions</a></li>
+  <li><a href="#packages" id="toc-packages" class="nav-link" data-scroll-target="#packages"><span class="toc-section-number">2.1.3</span>  Packages</a></li>
+  <li><a href="#vignette" id="toc-vignette" class="nav-link" data-scroll-target="#vignette"><span class="toc-section-number">2.1.4</span>  Vignette</a></li>
+  </ul></li>
   <li><a href="#data-types" id="toc-data-types" class="nav-link" data-scroll-target="#data-types"><span class="toc-section-number">2.2</span>  Data types</a></li>
   <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources"><span class="toc-section-number">2.3</span>  Further Resources</a>
   <ul class="collapse">
@@ -173,6 +241,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#hands-on-exercises-learning-r-through-challenges-and-small-projects" id="toc-hands-on-exercises-learning-r-through-challenges-and-small-projects" class="nav-link" data-scroll-target="#hands-on-exercises-learning-r-through-challenges-and-small-projects"><span class="toc-section-number">2.3.2</span>  Hands On Exercises — Learning R through Challenges and small Projects</a></li>
   <li><a href="#cheatsheets" id="toc-cheatsheets" class="nav-link" data-scroll-target="#cheatsheets"><span class="toc-section-number">2.3.3</span>  Cheatsheets</a></li>
   <li><a href="#community" id="toc-community" class="nav-link" data-scroll-target="#community"><span class="toc-section-number">2.3.4</span>  Community</a></li>
+  <li><a href="#websites" id="toc-websites" class="nav-link" data-scroll-target="#websites"><span class="toc-section-number">2.3.5</span>  Websites</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/MxNl/applied_programming_for_geoscience_book/edit/main/rbasics.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
@@ -202,25 +271,62 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>R is often described and introduced as in the following</p>
 <blockquote class="blockquote">
-<p>“R is a programming language for statistical computing and graphics supported by the R Core Team and the R Foundation for Statistical Computing. Created by statisticians Ross Ihaka and Robert Gentleman, R is used among data miners, bioinformaticians and statisticians for data analysis and developing statistical software.[7] Users have created packages to augment the functions of the R language.”</p>
+<p>“R is a programming language for statistical computing and graphics supported by the R Core Team and the R Foundation for Statistical Computing. Created by statisticians Ross Ihaka and Robert Gentleman, R is used among data miners, bioinformaticians and statisticians for data analysis and developing statistical software. Users have created packages to augment the functions of the R language.”</p>
 <footer>
 — Wikipedia
 </footer>
 </blockquote>
-<p>But today, are is much more than just for statistical analysis. Thousands of packages have been added over the last decades by its very active, supportive and nerdy community. Currently, there are 19176 packages available on CRAN as of today (2023-02-10).</p>
+<p>But today, R is much more than just for statistical analysis. Thousands of packages have been added over the last decades by its very active, supportive and nerdy community. Currently, there are 19934 packages available on CRAN (last checked: 2023-09-24) excluding packages that are only availably via other sources such as Github. Some packages have a more general purpose and can be applied widely, other packages are for very specific and distinct tasks. Today, R can be used for any task, starting with web scraping to data wrangling, literate programming, webapps, modelling, visualization and more.</p>
 <section id="overview-and-terms" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="overview-and-terms"><span class="header-section-number">2.1</span> Overview and Terms</h2>
-<p>sada</p>
+<p>There are some terms that you will read or hear many times when programming (in R). I’ve listed some of the most important terms, so you can easily distinguish them and look them up.</p>
 <ul>
-<li>R</li>
+<li>[R Basics]</li>
+<li><a href="#base-r">“Base R”</a></li>
+<li><a href="#functions">Functions</a></li>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#vignette">Vignette</a></li>
+<li>quarto</li>
+<li>rmarkdown</li>
 <li>RStudio</li>
+<li>CRAN</li>
 <li>git</li>
 <li>github</li>
-<li>quarto</li>
-<li>Packages</li>
-<li>Function</li>
-<li>Vignette</li>
 </ul>
+<section id="base-r" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="base-r"><span class="header-section-number">2.1.1</span> “Base R”</h3>
+<p>When you read or hear about “base R”, people mean a way of coding that only uses functions that are coming with the pure R installation. This means that no extra package needs to be installed to run some code. The opposite to coding in base R would be to make use of many packages that need to be downloaded and installed. Depending on what you want to achieve, the former or the latter or a compromise between them are best suited. If you want to write a package, it’s generally a good practice to write as much base R code as possible to reduce the number of packages that your package depends on. On the contrary, e.g.&nbsp;if you want to write readable scripts for specific data analysis, using packages for different tasks is very helpful. Me for example, I really enjoy coding using the ‘tidyverse’ packages.</p>
+</section>
+<section id="functions" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="functions"><span class="header-section-number">2.1.2</span> Functions</h3>
+<p>Functions are an essential part of programming, because they apply some processing to your data or objects. But they also help you to keep your code readable, organised and to avoid repitions. There are functions to simply paste two strings together to a single string, functions to generate a plot or even functions to train a complex model based on some input data. Functions can be written or defined by yourself or they are part of a package that you want to use.</p>
+</section>
+<section id="packages" class="level3" data-number="2.1.3">
+<h3 data-number="2.1.3" class="anchored" data-anchor-id="packages"><span class="header-section-number">2.1.3</span> Packages</h3>
+<p>A package is a collection of functions that are relevant to achieve a specific task. For example, the <code>raster</code> package contains many useful functions to handle spatial raster data like reading, processing and saving. Therefore, a package can be seen as a toolboc that contains tools for specific tasks. Some packages contain a single function, others contain a single dataset. Yes, packages can also contain datasets. In order to use packages, they need to be, downloaded and installed using the function</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"&lt;package name&gt;"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>AND</strong> loaded using</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"&lt;package name&gt;"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>It is also possible to only load a subset of functions from a package using argument <code>exclude</code> or <code>include.only</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"&lt;package name&gt;"</span>, <span class="at">include.only =</span> <span class="st">"function name"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>or the <code>import</code> package.</p>
+</section>
+<section id="vignette" class="level3" data-number="2.1.4">
+<h3 data-number="2.1.4" class="anchored" data-anchor-id="vignette"><span class="header-section-number">2.1.4</span> Vignette</h3>
+<p>A vignette is a guide or a introduction to a package in form of a website. It showcases one or more start to end examples of how the package can be used to achieve a specific task. It also shows a list of all functions of that package. Because how should you know about a function if you don’t know its name or that it exists. It also documents changes that where made between different package versions. Many existing packages have a vignette and its good practice to provide a vignette.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://dplyr.tidyverse.org/" data-fig-alt="A screenshot showing the top of the dplyr package vignette website."><img src="images/example_vignette_dplyr.png" class="img-fluid figure-img"></a></p>
+<p></p><figcaption class="figure-caption">Vignette of the `dplyr` package as example</figcaption><p></p>
+</figure>
+</div>
+</section>
 </section>
 <section id="data-types" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="data-types"><span class="header-section-number">2.2</span> Data types</h2>
@@ -233,6 +339,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 data-number="2.3.1" class="anchored" data-anchor-id="online-books"><span class="header-section-number">2.3.1</span> Online Books</h3>
 <ul>
 <li>Learning fundamental programming in R for data science with the <code>tidyverse</code> meta-package:<br><a href="https://r4ds.had.co.nz/index.html">R for Data Science | by Hadley Wickham and Garret Grolemund</a></li>
+<li>Introduction into R:<br><a href="https://moderndive.com/index.html">ModernDive | by Chester Ismay and Albert Y. Kim</a></li>
 <li>Introduction into R:<br><a href="https://livebook.manning.com/book/r-in-action-third-edition/r-in-action/4">R in Action | by Robert I. Kabacoff</a> (only partially available for free)</li>
 <li>Advanced R programming:<br><a href="https://adv-r.hadley.nz/index.html">Advanced R | by Hadley Wickham</a></li>
 <li>In-depth best practices for efficient R programming:<br><a href="https://csgillespie.github.io/efficientR/">Efficient R programming | by Colin Gillespie and Robin Lovelace</a></li>
@@ -241,12 +348,17 @@ ul.task-list li input[type="checkbox"] {
 <li>All you need to know about R with git and github:<br><a href="https://happygitwithr.com/index.html">Happy Git and GitHub for the useR | by Jenny Bryan</a></li>
 <li>Basics of machine learning in R using the <code>tidymodels</code> meta-package:<br><a href="https://www.tmwr.org/">Tidy Modeling with R | by Max Kuhn and Julia Silge</a></li>
 <li>Introduction and in-depth knowledge for writing R packages:<br><a href="https://r-pkgs.org/">R Packages | by Hadley Wickham and Jenny Bryan</a></li>
+<li>Basics of web scraping with R:<br><a href="https://steviep42.github.io/webscraping/book/">Web Scraping with R | by Steve Pittard</a></li>
+<li>Introduction into R and mixed topics:<br><a href="https://stat545.com/">STAT 545 | by Jenny Bryan</a></li>
+<li>Collection of R resources:<br><a href="https://www.bigbookofr.com/index.html">Big Book of R | by Oscar Baruffa</a></li>
 </ul>
 </section>
 <section id="hands-on-exercises-learning-r-through-challenges-and-small-projects" class="level3" data-number="2.3.2">
 <h3 data-number="2.3.2" class="anchored" data-anchor-id="hands-on-exercises-learning-r-through-challenges-and-small-projects"><span class="header-section-number">2.3.2</span> Hands On Exercises — Learning R through Challenges and small Projects</h3>
 <p>For speeding up the learning process it is more important to practise rather than reading books. There are many great places in the internet where you can find smaller and bigger data science challenges and projects. I really recommend to visit those places and just learn by directly solving tasks. Most important ones are:</p>
 <ul>
+<li><p><a href="https://r-bootcamp.netlify.app/chapter1">R Bootcamp</a></p></li>
+<li><p><a href="https://datasciencebox.org/02-hello-world.html">DatascienceBox</a></p></li>
 <li><p><a href="https://www.kaggle.com/competitions">Kaggle</a></p></li>
 <li><p><a href="https://github.com/rfordatascience/tidytuesday">TidyTuesday</a> and <a href="https://twitter.com/hashtag/TidyTuesday?src=hashtag_click">#tidytuesday</a></p></li>
 <li><p><a href="https://adventofcode.com/2022">AdventOfCode</a> and <a href="https://twitter.com/search?q=%23AdventOfCode&amp;src=hashtag_click">#AdventOfCode</a></p></li>
@@ -260,6 +372,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p><a href="https://posit.co/wp-content/uploads/2022/10/rstudio-ide-1.pdf">Rstudio IDE</a></p></li>
 <li><p><a href="https://posit.co/wp-content/uploads/2022/10/git-github.pdf">Git + GitHub</a></p></li>
 <li><p><a href="https://posit.co/wp-content/uploads/2022/10/base-r.pdf">Base R</a></p></li>
+<li><p><a href="https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf">Data Wrangling</a></p></li>
 <li><p><a href="https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf">Plotting with `ggplot` package</a></p></li>
 <li><p><a href="https://posit.co/wp-content/uploads/2022/10/sf.pdf">Spatial data with `sf` package</a></p></li>
 </ul>
@@ -273,6 +386,15 @@ ul.task-list li input[type="checkbox"] {
 <li><p><a href="https://twitter.com/search?q=%23rstats&amp;src=typed_query">Twitter with #rstats</a> for keeping track of latest developments, tips, tricks and getting in touch with the active R community members</p></li>
 <li><p><a href="https://mastodon.social/">Mastodon</a> with #rstats, same same</p></li>
 <li><p><a href="https://github.com/">Github</a> for getting help with bugs, getting to know the developers behind packages or simply hosting and versioning your own code</p></li>
+<li><p><a href="https://www.rladies.org/">R Ladies</a> each one teach one meet-ups</p></li>
+</ul>
+</section>
+<section id="websites" class="level3" data-number="2.3.5">
+<h3 data-number="2.3.5" class="anchored" data-anchor-id="websites"><span class="header-section-number">2.3.5</span> Websites</h3>
+<ul>
+<li><p><a href="https://r-graph-gallery.com/index.html">The R Graph Gallery</a> a sorted collection of charts made with R for inspiration</p></li>
+<li><p><a href="https://www.javedali.net/post/r-resources/">Free Resources for Learning R</a> a comprehensive list of free online material</p></li>
+<li><p><a href="https://vincentarelbundock.github.io/Rdatasets/articles/data.html">Rdatasets</a> an interactive list of datasets included in R packages</p></li>
 </ul>
 
 
